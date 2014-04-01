@@ -8,5 +8,4 @@ group :integration do
   cookbook 'ips-omniti'
 end
 
-cookbook 'mysql-chef_gem_test', path: 'test/fixtures/cookbooks/mysql-chef_gem_test'
-cookbook 'mysql', path: '/Users/someara/src/opscode-cookbooks/mysql'
+cookbook 'mysql-chef_gem_test', :path => 'test/fixtures/cookbooks/mysql-chef_gem_test'
