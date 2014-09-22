@@ -17,6 +17,13 @@
 # limitations under the License.
 #
 
+case node["platform"]
+when "debian", "ubuntu"
+  package 'ruby1.9.1-dev'
+when "redhat", "centos", "fedora"
+
+end
+
 mysql_chef_gem 'default' do
   action :install
 end
