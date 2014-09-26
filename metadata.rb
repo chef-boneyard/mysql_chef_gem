@@ -4,7 +4,7 @@ maintainer_email  'cookbooks@getchef.com'
 license           'Apache 2.0'
 description       'Provides the mysql_chef_gem resource'
 
-version           '0.0.4'
+version           '0.0.5'
 
 supports          'amazon'
 supports          'redhat'
