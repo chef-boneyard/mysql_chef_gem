@@ -19,4 +19,5 @@
 
 mysql_chef_gem 'default' do
   action :install
+  vendor node['mysql-chef-gem']['vendor']
 end

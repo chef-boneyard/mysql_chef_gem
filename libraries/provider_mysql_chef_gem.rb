@@ -14,7 +14,10 @@ class Chef
           end
 
           recipe_eval do
-            run_context.include_recipe 'mysql::client'
+            if new_resource.vendor.nil?
+              new_resource.vendor = 'mysql'
+            end
+            run_context.include_recipe "#{new_resource.vendor}::client"
           end
 
           chef_gem 'mysql' do
