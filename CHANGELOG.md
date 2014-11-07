@@ -2,6 +2,11 @@ mysql-chef_gem CHANGELOG
 ========================
 This file is used to list changes made in each version of the mysql-chef_gem cookbook.
 
+
+v0.0.6 (2014-11-07)
+-------------------
+- Add installation of mysql-devel on RHEL platforms
+
 v0.0.5 (2014-09-26)
 -------------------
 - Reverting installation of ruby dev packages

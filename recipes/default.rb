@@ -17,6 +17,12 @@
 # limitations under the License.
 #
 
+if platform_family?('rhel')
+  package 'mysql-devel' do
+    action :install
+  end
+end
+
 mysql_chef_gem 'default' do
   action :install
 end
