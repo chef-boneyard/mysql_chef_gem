@@ -31,6 +31,7 @@ Then, in a recipe:
 mysql_chef_gem 'default' do
   action [:install]
 end
+```
 
 Resources Overview
 ------------------
