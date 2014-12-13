@@ -29,7 +29,7 @@ Then, in a recipe:
 
 ```ruby
 mysql_chef_gem 'default' do
-  action [:install]
+  action :install
 end
 ```
 
