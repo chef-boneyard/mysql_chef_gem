@@ -35,11 +35,17 @@ class Chef
           action :nothing
         end
 
-        gem_package 'mysql' do
-          gem_binary RbConfig::CONFIG['bindir'] + '/gem'
-          version new_resource.gem_version
-          options "-- --with-mysql-dir=#{Chef::Config[:file_cache_path]}/connector"
-          action :install
+        bash 'install mysql gem' do
+          code <<-EOF
+            #{RbConfig::CONFIG['bindir'] + '/gem'} install \
+            mysql \
+            -q --no-rdoc --no-ri \
+            -v "#{new_resource.gem_version}" \
+            -- \
+            --with-mysql-config=#{Chef::Config[:file_cache_path]}/connector/bin/mysql_config \
+            --with-ldflags=''
+          EOF
+          action :run
         end
       end
 
