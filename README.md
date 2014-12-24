@@ -12,7 +12,7 @@ Scope
 -----
 This cookbook is concerned with the installation of the `mysql`
 Rubygem into Chef's gem path. Installation into other Ruby
-environments, or installation of related gems such as `mysql` are
+environments, or installation of related gems such as `mysql2` are
 outside the scope of this cookbook.
 
 Requirements
