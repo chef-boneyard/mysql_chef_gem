@@ -11,13 +11,26 @@ MethodLength:
   Enabled: false
 
 LineLength:
-  Max: 200
+  Enabled: false
 
 # HashSyntax:
-#   EnforcedStyle: hash_rockets
+#  EnforcedStyle: hash_rockets
 
 Documentation:
   Enabled: false
 
+PerceivedComplexity:
+  Enabled: false
+
 CyclomaticComplexity:
-  Max: 9
+  Enabled: false
+
+PerceivedComplexity:
+  Enabled: false
+
+Style/FileName:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'Guardfile'

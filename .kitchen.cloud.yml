@@ -18,7 +18,7 @@ driver_config:
 provisioner:
   name: chef_solo
   # require_chef_omnibus: 11.16.4
-  require_chef_omnibus: 12.0.0
+  require_chef_omnibus: 12.0.3
 
 platforms:
 - name: centos-5.8
@@ -114,6 +114,88 @@ suites:
   #
   # mysql_chef_gem
   #
-  - name: mysql_chef_gem
+  - name: client50-mysql
     run_list:
-    - recipe[mysql-chef_gem_test::default]
+    - recipe[mysql_chef_gem_test::default]
+    attributes:
+      mysql_chef_gem:
+       client_version: '5.0'
+       provider: 'mysql'
+    includes: [
+      'centos-5.8'
+    ]
+
+  - name: client51-mysql
+    run_list:
+    - recipe[mysql_chef_gem_test::default]
+    attributes:
+      mysql_chef_gem:
+       client_version: '5.1'
+       provider: 'mysql'
+    includes: [
+      'centos-6.5',
+      'ubuntu-10.04'
+    ]
+
+  - name: client55-mysql
+    run_list:
+    - recipe[mysql_chef_gem_test::default]
+    attributes:
+      mysql_chef_gem:
+       client_version: '5.5'
+       provider: 'mysql'
+    includes: [
+      'centos-6.5',
+      'fedora-20',
+      'debian-7.0',
+      'ubuntu-12.04',
+      'ubuntu-14.04'
+    ]
+
+  - name: client56-mysql
+    run_list:
+    - recipe[mysql_chef_gem_test::default]
+    attributes:
+      mysql_chef_gem:
+       client_version: '5.6'
+       provider: 'mysql'
+    includes: [
+      'centos-5.8',
+      'centos-6.5',
+      'centos-7.0',
+      'fedora-20',
+      'ubuntu-14.04'
+    ]
+
+  - name: client57-mysql
+    run_list:
+    - recipe[mysql_chef_gem_test::default]
+    attributes:
+      mysql_chef_gem:
+       client_version: '5.7'
+       provider: 'mysql'
+    includes: [
+      'centos-5.8',
+      'centos-6.5',
+      'centos-7.0',
+      'fedora-20'
+    ]
+
+## MariaDB
+  - name: client55-mariadb
+    run_list:
+    - recipe[mysql_chef_gem_test::default]
+    attributes:
+      mysql_chef_gem:
+        provider: 'mariadb'
+      mariadb:
+       install:
+        version: '5.5'
+    includes: [
+      #'debian-7.0',
+      #'centos-6.5',
+      #'centos-7.0',
+      'fedora-20',
+      #'ubuntu-12.04',
+      'ubuntu-14.04'
+    ]

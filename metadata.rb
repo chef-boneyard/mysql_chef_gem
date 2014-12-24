@@ -1,6 +1,6 @@
-name 'mysql-chef_gem'
+name 'mysql_chef_gem'
 maintainer 'Chef Software, Inc.'
-maintainer_email 'cookbooks@getchef.com'
+maintainer_email 'cookbooks@chef.io'
 license 'Apache 2.0'
 description 'Provides the mysql_chef_gem resource'
 
@@ -15,3 +15,5 @@ supports 'debian'
 supports 'ubuntu'
 
 depends 'build-essential'
+depends 'mysql'
+depends 'mariadb'
