@@ -2,6 +2,10 @@ mysql-chef_gem CHANGELOG
 ========================
 This file is used to list changes made in each version of the mysql-chef_gem cookbook.
 
+v2.0.1 (2014-12-25)
+-------------------
+- Switching to include_recipe from recipe_eval
+
 v2.0.0 (2014-12-23)
 -------------------
 - Reverting to using vendor packages instead of the connector tarball
