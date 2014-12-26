@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'mysql_chef_gem_test::default' do
   let(:chef_run) do
-    ChefSpec::Runner.new do |node|
+    ChefSpec::SoloRunner.new do |node|
       node.set['mysql_chef_gem']['resource_name'] = 'default'
     end.converge('mysql_chef_gem_test::default')
   end
