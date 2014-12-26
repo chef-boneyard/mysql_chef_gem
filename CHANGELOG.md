@@ -1,6 +1,9 @@
-mysql-chef_gem CHANGELOG
+mysql_chef_gem CHANGELOG
 ========================
-This file is used to list changes made in each version of the mysql-chef_gem cookbook.
+
+v2.0.2 (2014-12-26)
+-------------------
+- Updating source in Berksfile
 
 v2.0.1 (2014-12-25)
 -------------------
