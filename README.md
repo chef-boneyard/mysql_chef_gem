@@ -1,7 +1,7 @@
 mysql Chef Gem Installer Cookbook
 ==================================
 
-[![Build Status](https://travis-ci.org/opscode-cookbooks/mysql_chef_gem.png)](https://travis-ci.org/opscode-cookbooks/mysql_chef_gem)
+[![Build Status](https://travis-ci.org/chef-cookbooks/mysql_chef_gem.png)](https://travis-ci.org/chef-cookbooks/mysql_chef_gem)
 
 mysql_chef_gem is a library cookbook that provides an LWRP for use
 in recipes. It provides a wrapper around `chef_gem` called
