@@ -17,3 +17,6 @@ supports 'ubuntu'
 depends 'build-essential'
 depends 'mysql'
 depends 'mariadb'
+
+source_url 'https://github.com/chef-cookbooks/mysql_chef_gem' if respond_to?(:source_url)
+issues_url 'https://github.com/chef-cookbooks/mysql_chef_gem/issues' if respond_to?(:issues_url)
