@@ -1,10 +1,12 @@
+sudo: false
+cache: bundler
 language: ruby
+bundler_args: --without kitchen_common kitchen_vagrant kitchen_cloud
 rvm:
-- 2.1.2
-bundler_args: --without development
-gemfile:
-- Gemfile
+  - 2.0
+  - 2.1
+  - 2.2
 script:
-- bundle exec foodcritic .
-- bundle exec rubocop
-- bundle exec rspec
+  - bundle exec foodcritic -f any .
+  - bundle exec rubocop
+  - bundle exec rspec --color --format progress
