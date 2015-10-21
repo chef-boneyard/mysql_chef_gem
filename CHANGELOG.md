@@ -2,6 +2,24 @@ mysql_chef_gem CHANGELOG
 ========================
 This file is used to list changes made in each version of the mysql_chef_gem cookbook.
 
+v3.0.0 (2015-10-21)
+-------------------
+* Removed Chef 10 backwards compatibility. This cookbook requires 11+
+* Expanded the requirements and license sections of the readme to match other Chef managed cookbooks
+* Added oracle as a supported platform in the metadata
+* Added long_description to the metadata
+* Added issues_url and source_url to the metadata for Supermarket
+* Updated the .gitignore file
+* Expanded platforms tested in Test Kitchen
+* Added the standard Chef Rubocop config
+* Updated Travis CI to use ChefDK for testing deps
+* Updated testing and development deps in the Gemfile
+* Updated Testing and Contributing docs
+* Added maintainers.toml and maintainers.rb files
+* Added Travis status and cookbook version badges to the readme
+* Added a Rakefile for simplified testing
+* Added a chefignore file to limit what files are uploaded to the Chef server
+
 v2.0.2 (2014-12-26)
 -------------------
 - Updating source in Berksfile
