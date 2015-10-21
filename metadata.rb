@@ -6,13 +6,10 @@ description 'Provides the mysql_chef_gem resource'
 
 version '2.0.2'
 
-supports 'amazon'
-supports 'redhat'
-supports 'centos'
-supports 'scientific'
-supports 'fedora'
-supports 'debian'
-supports 'ubuntu'
+
+%w(ubuntu debian redhat centos scientific oracle amazon).each do |os|
+  supports os
+end
 
 depends 'build-essential'
 depends 'mysql'
