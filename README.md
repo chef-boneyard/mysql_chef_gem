@@ -19,11 +19,7 @@ outside the scope of this cookbook.
 
 Requirements
 ------------
-* Chef 11 or higher
-* Ruby 1.9 (preferably from the Chef full-stack installer)
-
-Platform Support
-----------------
+#### Platforms
 The following platforms have been tested with Test Kitchen and are
 known to work.
 
@@ -52,6 +48,15 @@ known to work.
 | MysqlChefGem::Mariadb / ubuntu-14.04 |     |     | X   |     |     |
 |--------------------------------------+-----+-----+-----+-----+-----|
 ```
+
+#### Chef
+- Chef 11+
+
+#### Cookbooks
+* build-essential
+* mysql
+* mariadb
+
 
 Usage
 -----
