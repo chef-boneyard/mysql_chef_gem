@@ -25,7 +25,7 @@ suites:
   #
   - name: client50-mysql
     run_list:
-    - recipe[mhysql_chef_gem_test::default]
+    - recipe[mysql_chef_gem_test::default]
     attributes:
       mhysql_chef_gem:
        client_version: '5.0'
@@ -36,7 +36,7 @@ suites:
 
   - name: client51-mysql
     run_list:
-    - recipe[mhysql_chef_gem_test::default]
+    - recipe[mysql_chef_gem_test::default]
     attributes:
       mhysql_chef_gem:
        client_version: '5.1'
@@ -48,7 +48,7 @@ suites:
 
   - name: client55-mysql
     run_list:
-    - recipe[mhysql_chef_gem_test::default]
+    - recipe[mysql_chef_gem_test::default]
     attributes:
       mhysql_chef_gem:
        client_version: '5.5'
@@ -62,7 +62,7 @@ suites:
 
   - name: client56-mysql
     run_list:
-    - recipe[mhysql_chef_gem_test::default]
+    - recipe[mysql_chef_gem_test::default]
     attributes:
       mhysql_chef_gem:
        client_version: '5.6'
@@ -75,7 +75,7 @@ suites:
 
   - name: client57-mysql
     run_list:
-    - recipe[mhysql_chef_gem_test::default]
+    - recipe[mysql_chef_gem_test::default]
     attributes:
       mhysql_chef_gem:
        client_version: '5.7'
@@ -88,7 +88,7 @@ suites:
 ## MariaDB
   - name: client55-mariadb
     run_list:
-    - recipe[mhysql_chef_gem_test::default]
+    - recipe[mysql_chef_gem_test::default]
     attributes:
       mhysql_chef_gem:
         provider: 'mariadb'
