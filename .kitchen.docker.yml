@@ -35,13 +35,13 @@ platforms:
 
 suites:
   #
-  # mhysql_chef_gem
+  # mysql_chef_gem
   #
   - name: client50-mysql
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
-      mhysql_chef_gem:
+      mysql_chef_gem:
        client_version: '5.0'
        provider: 'mysql'
     includes: [
@@ -52,7 +52,7 @@ suites:
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
-      mhysql_chef_gem:
+      mysql_chef_gem:
        client_version: '5.1'
        provider: 'mysql'
     includes: [
@@ -64,7 +64,7 @@ suites:
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
-      mhysql_chef_gem:
+      mysql_chef_gem:
        client_version: '5.5'
        provider: 'mysql'
     includes: [
@@ -78,7 +78,7 @@ suites:
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
-      mhysql_chef_gem:
+      mysql_chef_gem:
        client_version: '5.6'
        provider: 'mysql'
     includes: [
@@ -91,7 +91,7 @@ suites:
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
-      mhysql_chef_gem:
+      mysql_chef_gem:
        client_version: '5.7'
        provider: 'mysql'
     includes: [
@@ -104,7 +104,7 @@ suites:
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
-      mhysql_chef_gem:
+      mysql_chef_gem:
         provider: 'mariadb'
       mariadb:
        install:
