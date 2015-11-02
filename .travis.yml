@@ -14,8 +14,11 @@ services: docker
 
 env:
   matrix:
-  - INSTANCE=default-ubuntu-1404
-  - INSTANCE=default-ubuntu-1204
+  - INSTANCE=client55-mysql-ubuntu-1404
+  - INSTANCE=client56-mysql-ubuntu-1404
+  - INSTANCE=client55-mariadb-ubuntu-1404
+  - INSTANCE=client51-mysql-ubuntu-1204
+  - INSTANCE=client55-mysql-ubuntu-1204
   - INSTANCE=client55-mysql-centos-71
   - INSTANCE=client56-mysql-centos-71
   - INSTANCE=client57-mysql-centos-71
