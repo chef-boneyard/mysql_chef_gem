@@ -114,15 +114,12 @@ suites:
     ]
 
 ## MariaDB
-  - name: client55-mariadb
+  - name: client-mariadb
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
       mysql_chef_gem:
         provider: 'mariadb'
-      mariadb:
-       install:
-        version: '5.5'
     includes: [
       'ubuntu-14.04'
     ]

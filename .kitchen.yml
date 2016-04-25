@@ -59,7 +59,7 @@ suites:
        provider: 'mysql'
     includes: [
       'centos-6.7',
-      'debian-7.1',
+      'debian-7.2',
       'ubuntu-12.04',
       'ubuntu-14.04'
     ]
@@ -75,7 +75,7 @@ suites:
       'fedora-22',
       'fedora-23',
       'centos-6.7',
-      'centos-7.1',
+      'centos-7.2',
       'ubuntu-12.04',
       'ubuntu-14.04'
     ]
@@ -91,19 +91,16 @@ suites:
       'fedora-22',
       'fedora-23',
       'centos-6.7',
-      'centos-7.1'
+      'centos-7.2'
     ]
 
 ## MariaDB
-  - name: client55-mariadb
+  - name: client-mariadb
     run_list:
     - recipe[mysql_chef_gem_test::default]
     attributes:
       mysql_chef_gem:
         provider: 'mariadb'
-      mariadb:
-       install:
-        version: '5.5'
     includes: [
       'fedora-22',
       'fedora-23',
