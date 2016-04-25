@@ -1,61 +1,59 @@
-mysql_chef_gem CHANGELOG
-========================
+# mysql_chef_gem CHANGELOG
+
 This file is used to list changes made in each version of the mysql_chef_gem cookbook.
 
-v3.0.0 (2015-10-21)
--------------------
-* Removed Chef 10 backwards compatibility. This cookbook requires 11+
-* Expanded the requirements and license sections of the readme to match other Chef managed cookbooks
-* Added oracle as a supported platform in the metadata
-* Added long_description to the metadata
-* Added issues_url and source_url to the metadata for Supermarket
-* Updated the .gitignore file
-* Expanded platforms tested in Test Kitchen
-* Added the standard Chef Rubocop config
-* Updated Travis CI to use ChefDK for testing deps
-* Updated testing and development deps in the Gemfile
-* Updated Testing and Contributing docs
-* Added maintainers.toml and maintainers.rb files
-* Added Travis status and cookbook version badges to the readme
-* Added a Rakefile for simplified testing
-* Added a chefignore file to limit what files are uploaded to the Chef server
+## v3.0.0 (2015-10-21)
 
-v2.0.2 (2014-12-26)
--------------------
+- Removed Chef 10 backwards compatibility. This cookbook requires 11+
+- Expanded the requirements and license sections of the readme to match other Chef managed cookbooks
+- Added oracle as a supported platform in the metadata
+- Added long_description to the metadata
+- Added issues_url and source_url to the metadata for Supermarket
+- Updated the .gitignore file
+- Expanded platforms tested in Test Kitchen
+- Added the standard Chef Rubocop config
+- Updated Travis CI to use ChefDK for testing deps
+- Updated testing and development deps in the Gemfile
+- Updated Testing and Contributing docs
+- Added maintainers.toml and maintainers.rb files
+- Added Travis status and cookbook version badges to the readme
+- Added a Rakefile for simplified testing
+- Added a chefignore file to limit what files are uploaded to the Chef server
+
+## v2.0.2 (2014-12-26)
+
 - Updating source in Berksfile
 
-v2.0.1 (2014-12-25)
--------------------
+## v2.0.1 (2014-12-25)
+
 - Switching to include_recipe from recipe_eval
 
-v2.0.0 (2014-12-23)
--------------------
+## v2.0.0 (2014-12-23)
+
 - Reverting to using vendor packages instead of the connector tarball
 - Adding support for linking against MariaDB libraries
 
-v1.0.0 (2014-12-12)
--------------------
+## v1.0.0 (2014-12-12)
+
 - Removing recipe that contained a single resource
 - Removed dependency on mysql cookbook
-- Switched to using the MySQL connector libraries tarball from a
-  webserver rather than system development package
+- Switched to using the MySQL connector libraries tarball from a webserver rather than system development package
 - Added serverspec tests
 - Updated the README
 
-v0.0.5 (2014-09-26)
--------------------
+## v0.0.5 (2014-09-26)
+
 - Reverting installation of ruby dev packages
 
-v0.0.4 (2014-09-22)
--------------------
+## v0.0.4 (2014-09-22)
+
 - Fixing some bugs in the README
 - Adding more development packages
 
-v0.0.2 (2014-03-31)
--------------------
+## v0.0.2 (2014-03-31)
+
 Initial Release
 
+## v0.0.1 (2014-03-28)
 
-v0.0.1 (2014-03-28)
--------------------
 - Initial release

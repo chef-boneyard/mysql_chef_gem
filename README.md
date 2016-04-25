@@ -1,27 +1,18 @@
-mysql Chef Gem Installer Cookbook
-==================================
+# mysql Chef Gem Installer Cookbook
 
-[![Build Status](https://travis-ci.org/chef-cookbooks/mysql_chef_gem.svg?branch=master)](http://travis-ci.org/chef-cookbooks/mysql_chef_gem)
-[![Cookbook Version](https://img.shields.io/cookbook/v/mysql_chef_gem.svg)](https://supermarket.chef.io/cookbooks/mysql_chef_gem)
+[![Build Status](https://travis-ci.org/chef-cookbooks/mysql_chef_gem.svg?branch=master)](http://travis-ci.org/chef-cookbooks/mysql_chef_gem) [![Cookbook Version](https://img.shields.io/cookbook/v/mysql_chef_gem.svg)](https://supermarket.chef.io/cookbooks/mysql_chef_gem)
 
+mysql_chef_gem is a library cookbook that provides an LWRP for use in recipes. It provides a wrapper around `chef_gem` called `mysql_chef_gem` that eases the installation process, collecting the prerequisites and side-stepping the compilation phase arms race.
 
-mysql_chef_gem is a library cookbook that provides an LWRP for use
-in recipes. It provides a wrapper around `chef_gem` called
-`mysql_chef_gem` that eases the installation process, collecting the
-prerequisites and side-stepping the compilation phase arms race.
+## Scope
 
-Scope
------
-This cookbook is concerned with the installation of the `mysql`
-Rubygem into Chef's gem path. Installation into other Ruby
-environments, or installation of related gems such as `mysql2` are
-outside the scope of this cookbook.
+This cookbook is concerned with the installation of the `mysql` Rubygem into Chef's gem path. Installation into other Ruby environments, or installation of related gems such as `mysql2` are outside the scope of this cookbook.
 
-Requirements
-------------
-#### Platforms
-The following platforms have been tested with Test Kitchen and are
-known to work.
+## Requirements
+
+### Platforms
+
+The following platforms have been tested with Test Kitchen and are known to work.
 
 ```
 |--------------------------------------+-----+-----+-----+-----+-----|
@@ -47,18 +38,20 @@ known to work.
 |--------------------------------------+-----+-----+-----+-----+-----|
 ```
 
-#### Chef
+### Chef
+
 - Chef 11+
 
-#### Cookbooks
-* build-essential
-* mysql
-* mariadb
+### Cookbooks
 
+- build-essential
+- mysql
+- mariadb
 
-Usage
------
+## Usage
+
 Place a dependency on the mysql cookbook in your cookbook's metadata.rb
+
 ```ruby
 depends 'mysql_chef_gem', '~> 1.0'
 ```
@@ -71,34 +64,35 @@ mysql_chef_gem 'default' do
 end
 ```
 
-Resources Overview
-------------------
+## Resources Overview
+
 ### mysql_chef_gem
 
-The `mysql_chef_gem` resource the build dependencies and installation
-of the `mysql` rubygem into Chef's Ruby environment
+The `mysql_chef_gem` resource the build dependencies and installation of the `mysql` rubygem into Chef's Ruby environment
 
 #### Example
+
 ```ruby
 mysql_chef_gem 'default' do
   gem_version '2.9.1'
   action :install
 end
 ```
+
 #### Parameters
-- `gem_version` - The version of the `mysql` Rubygem to install into
-  the Chef environment. Defaults to '2.9.1'
-- `connectors_url` - URL of a tarball containing pre-compiled MySQL
-  connector libraries
+
+- `gem_version` - The version of the `mysql` Rubygem to install into the Chef environment. Defaults to '2.9.1'
+- `connectors_url` - URL of a tarball containing pre-compiled MySQL connector libraries
 - `connectors_checksum` - sha256sum of the `connectors_url` tarball
 
 #### Actions
+
 - `:install` - Build and install the gem into the Chef environment
 - `:remove` - Delete the gem from the Chef environment
 
 #### Providers
-Chef selects a default provider based on platform and version,
-but you can specify one if your platform support it.
+
+Chef selects a default provider based on platform and version, but you can specify one if your platform support it.
 
 ```ruby
 mysql_chef_gem 'default' do
@@ -107,12 +101,11 @@ mysql_chef_gem 'default' do
 end
 ```
 
-License & Authors
------------------
+## License & Authors
 
-**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
+**Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
-**Copyright:** 2014-2015, Chef Software, Inc.
+**Copyright:** 2014-2016, Chef Software, Inc.
 
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
