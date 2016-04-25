@@ -22,8 +22,6 @@ env:
   - INSTANCE=client56-mysql-ubuntu-1404
   - INSTANCE=client57-mysql-centos-6
   - INSTANCE=client57-mysql-centos-7
-  - INSTANCE=client57-mysql-ubuntu-1204
-  - INSTANCE=client57-mysql-ubuntu-1404
   - INSTANCE=client55-mariadb-ubuntu-1204
   - INSTANCE=client55-mariadb-ubuntu-1404
 

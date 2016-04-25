@@ -124,6 +124,5 @@ suites:
        install:
         version: '5.5'
     includes: [
-      'ubuntu-12.04',
       'ubuntu-14.04'
     ]
