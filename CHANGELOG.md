@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of the mysql_chef_gem cookbook.
 
+## v3.0.1 (2016-04-25)
+
+- Updated the readme's list of supported platforms to match current tested platforms
+- Added testing of all PRs using Kitchen-Docker in Travis
+- Updated Test Kitchen suites to test the most recent platforms / MySQL releases available
+- Depend mysql cookbook 6.0+ which was needed by the providers
+
 ## v3.0.0 (2015-10-21)
 
 - Removed Chef 10 backwards compatibility. This cookbook requires 11+
