@@ -46,7 +46,7 @@ suites:
        client_version: '5.1'
        provider: 'mysql'
     includes: [
-      'centos-5.11',
+      # 'centos-5.11', # this fails to install due to gem compile failure
       'centos-6.7'
     ]
 

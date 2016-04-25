@@ -70,7 +70,7 @@ suites:
        client_version: '5.1'
        provider: 'mysql'
     includes: [
-      'centos-5',
+      #'centos-5', # this fails to install due to gem compile failure
       'centos-6'
     ]
 
