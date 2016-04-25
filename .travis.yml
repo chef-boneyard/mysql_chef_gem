@@ -13,7 +13,6 @@ services: docker
 env:
   matrix:
   - INSTANCE=client50-mysql-centos-5
-  - INSTANCE=client51-mysql-centos-5
   - INSTANCE=client51-mysql-centos-6
   - INSTANCE=client55-mysql-ubuntu-1204
   - INSTANCE=client55-mysql-ubuntu-1404
