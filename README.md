@@ -32,7 +32,9 @@ The following platforms have been tested with Test Kitchen and are known to work
 |--------------------------------------+-----+-----+-----+-----+-----|
 | MysqlChefGem::Mysql / ubuntu-14.04   |     |     | X   | X   |     |
 |--------------------------------------+-----+-----+-----+-----+-----|
-| MysqlChefGem::Mariadb / fedora-21    |     |     | X   |     |     |
+| MysqlChefGem::Mariadb / fedora-22    |     |     | X   |     |     |
+|--------------------------------------+-----+-----+-----+-----+-----|
+| MysqlChefGem::Mariadb / fedora-23    |     |     | X   |     |     |
 |--------------------------------------+-----+-----+-----+-----+-----|
 | MysqlChefGem::Mariadb / ubuntu-14.04 |     |     | X   |     |     |
 |--------------------------------------+-----+-----+-----+-----+-----|

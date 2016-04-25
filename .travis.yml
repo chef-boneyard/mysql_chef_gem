@@ -12,7 +12,7 @@ services: docker
 
 env:
   matrix:
-  - INSTANCE=client50-mysql-centos-5
+#  - INSTANCE=client50-mysql-centos-5 # centos 5 docker image is failing to lookup chef.io
   - INSTANCE=client51-mysql-centos-6
   - INSTANCE=client55-mysql-ubuntu-1204
   - INSTANCE=client55-mysql-ubuntu-1404
@@ -21,7 +21,6 @@ env:
   - INSTANCE=client56-mysql-ubuntu-1404
   - INSTANCE=client57-mysql-centos-6
   - INSTANCE=client57-mysql-centos-7
-  - INSTANCE=client55-mariadb-ubuntu-1204
   - INSTANCE=client55-mariadb-ubuntu-1404
 
 # Don't `bundle install`
