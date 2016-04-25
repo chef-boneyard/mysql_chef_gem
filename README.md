@@ -56,10 +56,10 @@ The following platforms have been tested with Test Kitchen and are known to work
 
 ## Usage
 
-Place a dependency on the mysql cookbook in your cookbook's metadata.rb
+Place a dependency on the mysql_chef_gem cookbook in your cookbook's metadata.rb
 
 ```ruby
-depends 'mysql_chef_gem', '~> 1.0'
+depends 'mysql_chef_gem', '~> 3.0'
 ```
 
 Then, in a recipe:
