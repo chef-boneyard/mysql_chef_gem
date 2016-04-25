@@ -11,7 +11,7 @@ version '3.0.0'
 end
 
 depends 'build-essential'
-depends 'mysql'
+depends 'mysql', '>= 6.0.0'
 depends 'mariadb'
 
 source_url 'https://github.com/chef-cookbooks/mysql_chef_gem' if respond_to?(:source_url)

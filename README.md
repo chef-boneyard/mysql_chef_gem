@@ -51,7 +51,7 @@ The following platforms have been tested with Test Kitchen and are known to work
 ### Cookbooks
 
 - build-essential
-- mysql
+- mysql 6.0+
 - mariadb
 
 ## Usage
