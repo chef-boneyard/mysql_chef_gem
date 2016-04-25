@@ -91,9 +91,7 @@ suites:
       'fedora-22',
       'fedora-23',
       'centos-6.7',
-      'centos-7.1',
-      'ubuntu-12.04',
-      'ubuntu-14.04'
+      'centos-7.1'
     ]
 
 ## MariaDB
