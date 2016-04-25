@@ -7,6 +7,13 @@ driver:
   privileged: true
 
 platforms:
+- name: centos-5
+  driver:
+    image: centos:5
+    platform: rhel
+    run_command: /sbin/init
+    provision_command:
+      - /usr/bin/yum install -y initscripts net-tools wget
 - name: centos-6
   driver:
     image: centos:6
@@ -52,7 +59,7 @@ suites:
        client_version: '5.0'
        provider: 'mysql'
     includes: [
-      'centos-6.7'
+      'centos-5'
     ]
 
   - name: client51-mysql
@@ -63,8 +70,8 @@ suites:
        client_version: '5.1'
        provider: 'mysql'
     includes: [
-      'centos-6.7',
-      'ubuntu-12.04'
+      'centos-5',
+      'centos-6'
     ]
 
   - name: client55-mysql
@@ -89,8 +96,9 @@ suites:
        client_version: '5.6'
        provider: 'mysql'
     includes: [
-      'centos-6.7',
-      'centos-7.1',
+      'centos-6',
+      'centos-7',
+      'ubuntu-12.04',
       'ubuntu-14.04'
     ]
 
@@ -102,8 +110,10 @@ suites:
        client_version: '5.7'
        provider: 'mysql'
     includes: [
-      'centos-6.7',
-      'centos-7.1'
+      'centos-6',
+      'centos-7',
+      'ubuntu-12.04',
+      'ubuntu-14.04'
     ]
 
 ## MariaDB
@@ -117,6 +127,6 @@ suites:
        install:
         version: '5.5'
     includes: [
-      'fedora-21',
+      'ubuntu-12.04',
       'ubuntu-14.04'
     ]

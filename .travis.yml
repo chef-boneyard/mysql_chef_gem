@@ -12,14 +12,21 @@ services: docker
 
 env:
   matrix:
-  - INSTANCE=client55-mysql-ubuntu-1404
-  - INSTANCE=client56-mysql-ubuntu-1404
-  - INSTANCE=client55-mariadb-ubuntu-1404
-  - INSTANCE=client51-mysql-ubuntu-1204
+  - INSTANCE=client50-mysql-centos-5
+  - INSTANCE=client51-mysql-centos-5
+  - INSTANCE=client51-mysql-centos-6
   - INSTANCE=client55-mysql-ubuntu-1204
-  - INSTANCE=client55-mysql-centos-71
-  - INSTANCE=client56-mysql-centos-71
-  - INSTANCE=client57-mysql-centos-71
+  - INSTANCE=client55-mysql-ubuntu-1404
+  - INSTANCE=client56-mysql-centos-6
+  - INSTANCE=client56-mysql-centos-7
+  - INSTANCE=client56-mysql-ubuntu-1204
+  - INSTANCE=client56-mysql-ubuntu-1404
+  - INSTANCE=client57-mysql-centos-6
+  - INSTANCE=client57-mysql-centos-7
+  - INSTANCE=client57-mysql-ubuntu-1204
+  - INSTANCE=client57-mysql-ubuntu-1404
+  - INSTANCE=client55-mariadb-ubuntu-1204
+  - INSTANCE=client55-mariadb-ubuntu-1404
 
 # Don't `bundle install`
 install: echo "skip bundle install"
