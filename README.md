@@ -46,7 +46,7 @@ The following platforms have been tested with Test Kitchen and are known to work
 
 ### Chef
 
-- Chef 11+
+- Chef 12.1+
 
 ### Cookbooks
 

@@ -14,5 +14,6 @@ depends 'build-essential'
 depends 'mysql', '>= 6.0.0'
 depends 'mariadb'
 
-source_url 'https://github.com/chef-cookbooks/mysql_chef_gem' if respond_to?(:source_url)
-issues_url 'https://github.com/chef-cookbooks/mysql_chef_gem/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-cookbooks/mysql_chef_gem'
+issues_url 'https://github.com/chef-cookbooks/mysql_chef_gem/issues'
+chef_version '>= 12.1'
