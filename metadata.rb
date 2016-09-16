@@ -4,7 +4,7 @@ maintainer_email 'cookbooks@chef.io'
 license 'Apache 2.0'
 description 'Provides the mysql_chef_gem resource'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '3.0.1'
+version '4.0.0'
 
 %w(ubuntu debian redhat centos scientific oracle amazon).each do |os|
   supports os
