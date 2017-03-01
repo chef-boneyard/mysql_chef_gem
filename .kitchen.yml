@@ -12,7 +12,6 @@ platforms:
   - name: debian-8.6
     run_list: apt::default
   - name: fedora-25
-  - name: opensuse-13.2
   - name: opensuse-leap-42.2
   - name: ubuntu-14.04
     run_list: apt::default
@@ -23,17 +22,6 @@ suites:
   #
   # mysql_chef_gem
   #
-  - name: client50-mysql
-    run_list:
-    - recipe[mysql_chef_gem_test::default]
-    attributes:
-      mysql_chef_gem:
-       client_version: '5.0'
-       provider: 'mysql'
-    includes: [
-      'centos-5.11'
-    ]
-
   - name: client51-mysql
     run_list:
     - recipe[mysql_chef_gem_test::default]
@@ -42,9 +30,8 @@ suites:
        client_version: '5.1'
        provider: 'mysql'
     includes: [
-      # 'centos-5.11', # this fails to install due to gem compile failure
       'centos-6.8'
-    ]
+      ]
 
   - name: client55-mysql
     run_list:
@@ -56,9 +43,8 @@ suites:
     includes: [
       'centos-6.8',
       'debian-7.2',
-      'ubuntu-12.04',
       'ubuntu-14.04'
-    ]
+      ]
 
   - name: client56-mysql
     run_list:
@@ -71,9 +57,8 @@ suites:
       'fedora-25',
       'centos-6.8',
       'centos-7.3',
-      'ubuntu-12.04',
       'ubuntu-14.04'
-    ]
+      ]
 
   - name: client57-mysql
     run_list:
@@ -86,7 +71,7 @@ suites:
       'fedora-25',
       'centos-6.8',
       'centos-7.3'
-    ]
+      ]
 
 ## MariaDB
   - name: client-mariadb
@@ -97,6 +82,5 @@ suites:
         provider: 'mariadb'
     includes: [
       'fedora-25',
-      'ubuntu-12.04',
       'ubuntu-14.04'
-    ]
+      ]
