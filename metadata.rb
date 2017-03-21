@@ -1,7 +1,7 @@
 name 'mysql_chef_gem'
 maintainer 'Chef Software, Inc.'
 maintainer_email 'cookbooks@chef.io'
-license 'Apache 2.0'
+license 'Apache-2.0'
 description 'Provides the mysql_chef_gem resource'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '4.0.0'
