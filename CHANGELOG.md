@@ -2,7 +2,12 @@
 
 This file is used to list changes made in each version of the mysql_chef_gem cookbook.
 
+## 4.0.1 (2017-04-26)
+
+- Update apache2 license string
+
 ## 4.0.0 (2016-09-16)
+
 - Remove double entries
 - Fix some faulty instructions
 - Testing updates
