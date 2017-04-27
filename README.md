@@ -4,6 +4,10 @@
 
 mysql_chef_gem is a library cookbook that provides an LWRP for use in recipes. It provides a wrapper around `chef_gem` called `mysql_chef_gem` that eases the installation process, collecting the prerequisites and side-stepping the compilation phase arms race.
 
+# DEPRECATED
+
+This cookbook has been deprecated. The goal of the cookbook was to make installing the gem easier, but that can be done in a simple wrapper cookbook with less complexity than this cookbook introduced.
+
 ## Scope
 
 This cookbook is concerned with the installation of the `mysql` Rubygem into Chef's gem path. Installation into other Ruby environments, or installation of related gems such as `mysql2` are outside the scope of this cookbook. For installing the mysql2 gem see <https://supermarket.chef.io/cookbooks/mysql2_chef_gem>
