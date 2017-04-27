@@ -2,6 +2,11 @@
 
 This file is used to list changes made in each version of the mysql_chef_gem cookbook.
 
+## 4.0.2 (2017-04-27)
+
+- Expand the chefspec helper and remove the report that’s useless
+- Update chefignore file for policyfiles
+
 ## 4.0.1 (2017-04-26)
 
 - Update apache2 license string
